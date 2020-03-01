@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(39, 38, 38);
+}
+li{
+    list-style: none;
+}
+
+/* Estilo Peliculas */
+
+.titulo-peliculas{
+    background: rgba(3, 151, 209, 0.452);
+    width: 100%;
+    text-align: center;
+    padding:0;
+    margin:0;
+    padding-bottom:1px;
+}
+.peliculas{
+    background: rgba(6, 126, 173, 0.452);
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.peliculas:nth-child(odd){
+    background: rgba(5, 94, 129, 0.452);
+}
+.peliculas a{
+    color:white;
+    margin-left:15px;
+    margin-top:15px;
+}
+.footersito{
+    margin-top:30px;
+    color:white;
+    text-align: center;
+}
+
+
+    /* Estilo actores */
+
+
+.actores{
+    background: rgba(173, 53, 6, 0.863);
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.titulo-actores{
+    background: rgba(189, 24, 24, 0.452);
+    width: 100%;
+    text-align: center;
+    padding:0;
+    margin:0;
+    padding-bottom:1px;
+}
+
+.actores:nth-child(odd){
+    background: rgba(245, 83, 7, 0.616);
+}
+
+.actores a{
+    color:white;
+    margin-left:15px;
+    margin-top:15px;
+}
