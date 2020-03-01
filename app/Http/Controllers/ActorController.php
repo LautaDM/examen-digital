@@ -47,6 +47,13 @@ class ActorController extends Controller
         return redirect('/agregaractor');
     }
 
+    public function destroy($id){
+        $actor = Actor::whereId($id)->firstOrFail();
+        $actor->delete();
+        return redirect('/actores');
+     
+    }
+
     //detalle actor
 
     public function detalles($id){

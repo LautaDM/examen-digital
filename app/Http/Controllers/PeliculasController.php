@@ -17,6 +17,7 @@ class PeliculasController extends Controller
         $generos = Genre::all();
         return view('detallePelicula',compact('peliculaElegida','generos'));
     }
+    
     public function editar(Request $datos){
 
         $editarPelicula = Movie::find($datos->id);
