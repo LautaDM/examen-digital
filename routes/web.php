@@ -27,6 +27,8 @@ Route::get('/agregaractor','ActorController@agregar');
 
 Route::post('/agregaractor','ActorController@agregarActor');
 
+Route::post('actores/{id?}/delete', 'ActorController@destroy');
+
 Route::get('/peliculas','PeliculasController@listaPeliculas');
 
 Route::get('/pelicula/{id}', 'PeliculasController@detalles');
