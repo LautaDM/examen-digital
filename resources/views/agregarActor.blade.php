@@ -1,7 +1,7 @@
 @extends('layouts.plantilla')
 
 @section('contenido')
-    
+    <center>
     <form action="/agregaractor" method="post">
         @csrf
         <input type="text" name="first_name" placeholder="Primer Nombre"><br><br>
@@ -16,5 +16,5 @@
         <input type="submit" value="Agregar Actor">
         
     </form>
-
+</center>
 @endsection

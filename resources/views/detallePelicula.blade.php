@@ -1,6 +1,21 @@
 @extends('layouts.plantilla')
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title> {{$peliculaElegida->title}} </title>
+</head>
+<body>
+    
 
 @section('contenido')
+
     <h1> {{$peliculaElegida->title}} </h1>
     <li>Raiting:  {{$peliculaElegida->rating}}  </li>
     <li>Premios:  {{$peliculaElegida->awards}}  </li>
@@ -9,7 +24,14 @@
     <li>Genero: @if ($peliculaElegida->genres)
         {{$peliculaElegida->genres->name}}
         @else No tiene genero
-    @endif</li><br><br><br><br>
+    @endif</li>
+    
+    <h2>Actores</h2>
+        @foreach ($peliculaElegida->actors as $actor)
+            <li> {{$actor->first_name . " " . $actor->last_name}} </li>
+        @endforeach
+
+    <br><br><br><br>
     <center>
     <div class="formulario">
         <h2>Editar pelicula</h2>
@@ -31,4 +53,8 @@
         </form>
     </div>
     </center>
+
 @endsection
+
+</body>
+</html>

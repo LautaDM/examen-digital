@@ -11,4 +11,5 @@
          @else No tiene pelicula favorita
         @endif </li>
     </center>
+    
 @endsection
